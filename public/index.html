@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supply Chain Tracker | Blockchain Solution</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-link"></i>
+                <h1>ChainTrack</h1>
+            </div>
+            <p class="tagline">Blockchain-powered supply chain transparency</p>
+        </header>
+
+        <main class="main-content">
+            <section class="input-section">
+                <h2><i class="fas fa-plus-circle"></i> Add New Stage</h2>
+                <div class="input-group">
+                    <div class="input-field">
+                        <label for="stage"><i class="fas fa-cogs"></i> Stage</label>
+                        <input type="text" id="stage" placeholder="e.g. Manufactured, Shipped, Delivered">
+                    </div>
+                    <div class="input-field">
+                        <label for="location"><i class="fas fa-map-marker-alt"></i> Location</label>
+                        <input type="text" id="location" placeholder="e.g. Factory, Warehouse, Retail">
+                    </div>
+                    <div class="input-field">
+                        <label for="handler"><i class="fas fa-user-tie"></i> Handled by</label>
+                        <input type="text" id="handler" placeholder="Person/Company responsible">
+                    </div>
+                    <button class="btn-primary" onclick="addStage()">
+                        <i class="fas fa-link"></i> Add to Blockchain
+                    </button>
+                </div>
+            </section>
+
+            <section class="chain-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-project-diagram"></i> Supply Chain Blockchain</h2>
+                    <div class="chain-stats">
+                        <span id="block-count">0</span> Blocks
+                    </div>
+                </div>
+                <div id="chain" class="chain-container">
+                    <div class="empty-state">
+                        <i class="fas fa-box-open"></i>
+                        <p>No stages added yet. Add the first block to start the chain!</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>© 2025 ChainTrack | Blockchain Supply Chain Solution</p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
