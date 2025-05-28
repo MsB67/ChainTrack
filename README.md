@@ -28,4 +28,4 @@
 ## 📍 Developed By
 
 **Mayank Singh Bisht**
-VIT Bhopal University
+*VIT Bhopal University*
